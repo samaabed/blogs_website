@@ -9,6 +9,7 @@ The project is currently using HTML and CSS only.
 ## Design And Features
 1. __Home Page__
    The home page mainly displays articles.
+   
    ![image](https://github.com/user-attachments/assets/81299efe-a8c3-4d59-8405-88c54383109b)
 
 
