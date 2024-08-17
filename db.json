@@ -1,0 +1,40 @@
+{
+  "blogs": [
+    {
+      "id": "0",
+      "title": "30 beautiful google fonts for your website",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptates dignissimos quisquam laborum animi libero accusantium soluta earum quam fugiat.",
+      "date": "June 11, 2024"
+    },
+    {
+      "id": "1",
+      "title": "design thinling 101 designers",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam rem quibusdam omnis ea voluptate aspernatur dolorem, atque error explicabo pariatur optio beatae facere unde doloribus ut non. Unde, doloribus animi.",
+      "date": "December 15, 2017"
+    },
+    {
+      "id": "2",
+      "title": "15+ best angular admin dashboard templates of 2024 - users choice",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo atque nobis omnis consequatur maiores qui fuga, temporibus saepe fugiat commodi?",
+      "date": "May 22, 2023"
+    },
+    {
+      "id": "3",
+      "title": "26 best neon fonts to light up your designs for 2024",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non esse praesentium veniam ipsa a illo cupiditate? Eveniet quam ex exercitationem nisi, ea, illo ab possimus quo iusto odio veritatis maxime nam! Nulla quae, itaque tempora aperiam deserunt dolores accusantium ducimus?",
+      "date": "August 16, 2024"
+    },
+    {
+      "id": "4",
+      "title": "15 best brackets extensions for a smooth coding experience",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, illo excepturi. Ipsa voluptas fugit ad incidunt, expedita quibusdam libero odio accusantium excepturi fugiat, perferendis dolore est dignissimos officia cupiditate recusandae autem quaerat? Ea, porro autem!",
+      "date": "June 3, 2024"
+    },
+    {
+      "id": "5",
+      "title": "what is color theory? — a comprehensive guide for designers",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, inventore. Aliquam culpa debitis, voluptas possimus ipsam suscipit, quam, expedita esse aliquid magnam doloremque mollitia atque.",
+      "date": "May 22, 2019"
+    }
+  ]
+}

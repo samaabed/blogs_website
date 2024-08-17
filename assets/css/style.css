@@ -13,6 +13,8 @@ body{
     --mainColor: #32315d;
     --secondaryColor: #8b8dd5;
     --fontColor: #727375;
+    --successColor: #4BB543;
+    --dangerColor: #BB2124;
 }
 
 .container{
@@ -30,7 +32,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 5;
 }
 
 .navbar-content-wraper{
@@ -71,8 +72,9 @@ body{
 
 .fa-bars{
     color: var(--secondaryColor);
+    /* display: none; */
     visibility: hidden;
-    display: inline-block; /* change icon display to inline-block to control its height */
+    /* display: none; change icon display to inline-block to control its width */
     width: 100px;
     text-align: center; /* center icon within its width */
     cursor: pointer;
@@ -86,7 +88,7 @@ body{
     text-transform: capitalize;
 }
 
-.dropdown-menu .dropdown-content{
+.dropdown-menu #dropdown-content{
     position: absolute;
     background-color: var(--secondaryColor);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
@@ -96,8 +98,8 @@ body{
 }
 
 
-.dropdown-menu:hover .dropdown-content{
-    display: block;
+.dropdown-menu:hover #dropdown-content{
+    /* display: block; */
 }
 
 
@@ -108,31 +110,48 @@ body{
 
     .fa-bars{
         visibility: visible;
+        /* display: block; */
+
     }
 
     .navbar-content-wraper{
-        justify-content:left;
+        justify-content:space-between;
+        width: 100%;
 
     }
  }
 
 /* BLOGS */
-.home-header{
+.section-header{
     text-transform: capitalize;
     padding-top: 120px;
 }
 
-.blogs-section{
+#blogs-section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: left;
     margin-top: 20px;
 }
 
-.blog-item{
-    margin-top: 10px;
-    width: 30%;   
+.blog-item {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    margin-bottom: 20px;
+    margin-right: 20px ;
 }
+  
+.blog-item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+  
+.blog-item .container {
+    padding: 2px 16px;
+}
+
 
 .blog-img{
     width: 30%;
@@ -147,31 +166,56 @@ body{
     display: flex;
     justify-content: center; /* center image horizontally */
     align-items: center; /* center image vertically*/
-    transition: .5s;
-    z-index: 1;
 }
 
-.img-container:hover{
-    transform: scale(.98);
-}
-
-.blog-heading{
+.blog-title{
     margin-top: 10px;
     text-transform: capitalize;
 }
 
-.blog-heading a{
+.blog-title a{
     text-decoration: none;
     color: black;
 }
 
-.blog-heading a:hover{
+.blog-title a:hover{
+    text-decoration: underline;
+}
+
+.blog-date{
+    font-size: 12px;
+    color: var(--fontColor);
     text-decoration: underline;
 }
 
 .blog-description{
     margin-top: 5px;
     color: var(--fontColor);
+}
+
+.update-btn, .delete-btn{
+    cursor: pointer;
+    padding: 6px;
+    margin: 10px 2px;
+    color: white;
+    border: none;
+    border-radius: 6%;
+    transition-property: height;
+    transition: 0.3s;
+    transition-duration: 1s;
+}
+
+.update-btn:hover, .delete-btn:hover{
+    scale: .95;
+}
+
+
+.update-btn{
+    background-color: var(--successColor);
+}
+
+.delete-btn{
+    background-color: var(--dangerColor);
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) { /* tablets */
@@ -189,39 +233,59 @@ body{
 
  }
 
-/* FOOTER */
+ /* ADD BLOG FORM */
+.add-blog-form{
+    margin-top: 5px;
+}
+.add-blog-form .form-input{
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
 
+#add-blog-btn{
+    cursor: pointer;
+    padding: 6px;
+    margin: 10px 2px;
+    color: white;
+    border: none;
+    background-color: var(--successColor);
+    border-radius: 6%;
+    text-transform: capitalize;
+    width: 100px;
+}
+
+
+/* FOOTER */
 .footer{
     background-color: var(--mainColor);
     margin-top: 50px;
 }
 
-.footer-section{
-    width: 30%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.footer-section p{
+.footer p{
     color: white;
-    padding-top: 2px;
-    font-size: 18px;
-}
-
-.rights-reserved-section{
-    background-color: white;
     text-align: center;
     padding: 10px;
     text-transform: uppercase;
 }
 
+
+
 @media (max-width: 991.98px) { /* tablets and smaller */
-    .footer-section{
-        width: 100%;
-        
-    }
+   
 
 }
 
+/* SWEET ALERT */
+.swal2-textarea{
+display: block;
+width: 393px;
+margin: auto;
+border: 1px solid gray;
+min-height: 80px;
+resize: none;
+margin-bottom: 8px;
+color: var(--fontColor);
 
-
+}
