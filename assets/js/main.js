@@ -112,7 +112,7 @@ function deleteBlog(blogId) {
                             icon: "success",
                             confirmButtonText: "Ok",
                         });
-
+                        fetchBlogs();
 
                     } else {
                         console.error('An error occurred while deleting the blog. Please try again.');
@@ -187,7 +187,7 @@ async function updateBlog(blogId) {
 
                     });
 
-                    // setTimeout(() => {  fetchBlogs(); }, 50000);
+                   fetchBlogs();
                 } else {
                     console.error('An error occurred while deleting the blog. Please try again.');
 
@@ -245,7 +245,7 @@ function addBlog(title, description) {
                 text: "The blog has been added.",
                 icon: "success",
             });
-            // fetchBlogs();
+            fetchBlogs();
         })
         .catch(error => console.error('Error:', error));
 }
