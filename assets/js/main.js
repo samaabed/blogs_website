@@ -264,7 +264,7 @@ function validateBlogTitle(title) {
     } else if (title.length > 100) {
         return "The title can have 50 characters at most.";
     } else if (!languageRegex.test(title)) {
-        return "The title can contain English characters and numbers only. Do not start the title with a number.";
+        return "The title can contain English characters and numbers only.";
     }
 
     return true;
